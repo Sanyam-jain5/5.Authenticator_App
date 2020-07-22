@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/mv_image"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/mv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image title"
+        android:layout_toRightOf="@id/mv_image"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/aclonica"/>
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mv_image"
+        android:text="ID"
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/mv_title"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/album_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mv_image"
+        android:text="album_id"
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/id"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/mv_image2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_launcher_background"
+        android:layout_below="@id/mv_image"/>
+
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
